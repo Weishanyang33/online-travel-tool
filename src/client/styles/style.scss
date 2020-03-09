@@ -1,0 +1,191 @@
+main {
+    position: absolute;
+    top: 180px;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    background-size: cover;
+    padding: 100px;
+    padding-top: 40px;
+  }
+
+  p{
+    width: 300px;
+    padding: 10px
+  }
+  
+  img {
+    max-width: 100%;
+    align-content: center;
+    max-height: fit-content;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    padding-bottom: 0;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  #image {
+    padding-bottom: 60px;
+  }
+  #top_button{
+    position: absolute;
+    right: 20px;
+    top: 80px;
+  }
+  .add_trip_section {
+    background-image: url("https://images2.minutemediacdn.com/image/upload/c_crop,h_839,w_1500,x_0,y_136/f_auto,q_auto,w_1100/v1554996382/shape/mentalfloss/istock-650322650.jpg");
+  }
+  .button {
+    background-color: rgb(59, 109, 76); /* Green */
+    border: solid 2.5px rgb(154, 209, 168);
+    color: rgb(255, 255, 255);
+    padding: 10px 32px;
+    margin: 20px;
+    margin-left: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline: 0 none;
+    transition: color 1s ease, background 1s ease, padding 2s ease;
+  }
+
+  .button:hover {
+    background: #bcb8b1;
+    color: #F4F3EE;
+    padding-left: 30px;
+  }
+
+  .removebutton{
+    background-color: rgb(59, 109, 76);
+    border: solid 2.5px rgb(154, 209, 168);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 10px 32px;
+    transition: color 1s ease, background 1s ease, padding 2s ease;
+  }
+
+  .removebutton:hover {
+    background: #bcb8b1;
+    color: #F4F3EE;
+    padding-left: 30px;
+  }
+
+  
+  #trip_list{
+    list-style-type: none;
+  }
+
+  .outerbox {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .outerbox_row {
+    display: flex;
+    flex-direction: row; 
+  }
+  
+  .section {
+    position: relative;
+    width: 90%;
+    font-family: Sans-Serif;
+    font-size: 20px;
+    align-content: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 80);
+  }
+  
+  div {
+    padding: 12px;
+  }
+  
+  .text {
+    font-size: 30px;
+    font-family: Sans-Serif;
+    color: rgb(255, 255, 255);
+  }
+  
+  input date{
+    -webkit-appearance: none;
+    margin: 0;
+    font-size: 18px;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    width: 100px;
+  }
+  
+  
+  h1 {
+    color: rgb(255, 255, 255);
+    padding: 0px, 0px, 0px, 0px;
+    font-size: 10px;
+    font-family: Sans-Serif;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  form {
+    border: 8px solid #3f613f;
+    border-radius: 5px;
+    padding: 120px;
+    width: 60;
+}
+
+input {
+    padding: 20px 40px;
+    width: 300px;
+    line-height: 16px;
+    margin: 0px 0;
+}
+
+#add_trip_button {
+  z-index: 1px;
+}
+
+sub {
+    background: #3f613f;
+    font-family: 'Courier New', Courier, monospace;
+    height: 20px;
+
+}
+
+h1 {
+    color: rgb(49, 48, 48);
+    font-size: 50px;
+    font-family: Sans-Serif;
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 0.2em;
+}
+
+text{
+    font-size: 30px;
+}
+
+p {
+    margin-block-start: 0.25em;
+    margin-block-end: 0.25em;
+}
+
+footer {
+    width: 100%;
+    height: 6%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 25px;
+    border-top: 28px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Travel APP</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Travel Planner</h1>
+            <button class = "button" id = "add_trip_button">Add trip</button> 
+        </header>
+        <main>
+            <div id = 'outerbox'>
+                <section class = 'section' id ="add_trip_section" style = "display: none">
+                    <p class = "text">Destination: </p>
+                    <input id="destination" placeholder="Please enter a valid zipcode or city" type="text">
+                    <p class = "text"'>Start Date: </p>
+                    <input id="departure_date" placeholder="Input Your Departure Date" type="date">
+                    <p class = "text"'>End Date: </p>
+                    <input id="return_date" placeholder="Input Your Return Date" type="date">
+                    <br>
+                    <button id = "submitButton" class = "button" type="button" onclick="return Client.formHandler(event)">Submit</button>
+                </section>
+
+                <section class = 'section' id ="trips_display_section">
+                    <div id="trip_display"> 
+                        <p class = "text">Your trips: </p>
+                        <p class = "text" id = "no_trip">You current have no upcoming travals, please add if you are having plans. </p>
+                        <ul id="trip_list"><ul>
+                    </div>
+                </section>
+            </div>
+            <br>
+            <br>
+
+            <footer role="contentinfo">
+                <pstyle='color: blue); >Copyright © 2020, Weishan Yang</p>
+            </footer>
+        </main>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js').then(registration =>{
+                        console.log('Service worker registered successfuly: ', registration);
+                    });
+                });
+                }else{
+                console.log("Service Worker not supported");
+                    };
+        </script>
+    </body>
+</html>
+
+
